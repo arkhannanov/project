@@ -17,6 +17,7 @@ let initialState = {
 const imagesReducer = (state = initialState, action) => {
     switch (action.type) {
         case REQUERST_NEW_IMAGE: {
+          console.log('Тест');
             return {
                 ...state,
                 loading: true,
@@ -24,6 +25,7 @@ const imagesReducer = (state = initialState, action) => {
         }
         case REQUERST_NEW_IMAGE_SUCCEEDED: {
             let imageUrl = action.url;
+          console.log('Тест2');
             return {
                 ...state,
                 images: state.images.push(imageUrl),
@@ -49,7 +51,7 @@ const imagesReducer = (state = initialState, action) => {
 }
 
 export const increaseCurrentImageIndex = () => ({type: INCREASE_CURRENT_IMAGE_INDEX});
-export const requestNewImageSucceeded = (url) => ({type: REQUERST_NEW_IMAGE, url});
+export const requestNewImageSucceeded = (url) => ({type: REQUERST_NEW_IMAGE_SUCCEEDED, url});
 export const requestNewImageFailed = (url) => ({type: REQUERST_NEW_IMAGE_FAILED, url});
 export const requestNewImage = () => ({type: REQUERST_NEW_IMAGE});
 export const fetchNewImage = (index) => ({type: FETCH_NEW_IMAGE, index});
@@ -63,10 +65,11 @@ function* fetchImageAsync(index) {
         yield put(requestNewImage());
         const data = yield call(() => {
                 return fetch('https://api.giphy.com/v1/gifs/random?api_key=gR30u9O8KPOanwIQupHbD90d4k57EOeY')
-                    .then(res => console.log(res.json()))
+                    .then(res => res.json())
             }
         );
-        yield put(requestNewImageSucceeded(data));
+        console.log(Object.values(data.data.images)[index].url);
+        yield put(requestNewImageSucceeded(Object.values(data.data.images)[index].url));
     } catch (error) {
         yield put(requestNewImageFailed());
     }
