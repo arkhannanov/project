@@ -6,6 +6,7 @@ import {Provider} from "react-redux";
 import store from "./redux/redux-store";
 import './App.scss';
 import Main from "./components/Main/Main";
+import History from "./components/History/History";
 
 
 class App extends Component {
@@ -27,8 +28,8 @@ class App extends Component {
             <Route path='/main'
                    render={() => <Main/>}/>
 
-            {/*<Route path='/history'*/}
-            {/*       render={() => <History/>}/>*/}
+            <Route path='/history'
+                   render={() => <History/>}/>
 
           </div>
         </div>

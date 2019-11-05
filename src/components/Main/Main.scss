@@ -1,0 +1,22 @@
+.main {
+  margin: auto;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+
+  &__image {
+    width: 500px;
+    height: auto;
+    align-self: center;
+  }
+
+  &__error {
+    color: red;
+  }
+
+  &__button {
+    width: 500px;
+    align-self: center;
+    margin-top: 2rem;
+  }
+}
