@@ -1,49 +1,55 @@
 import React, {Component} from 'react';
 import './App.scss';
 import Navbar from './components/Navbar/Navbar';
-import {BrowserRouter, Route} from "react-router-dom";
-import {Provider} from "react-redux";
+import {BrowserRouter, Route, withRouter} from "react-router-dom";
+import {connect, Provider} from "react-redux";
 import store from "./redux/redux-store";
 import './App.scss';
 import Main from "./components/Main/Main";
 import History from "./components/History/History";
+import {compose} from "redux";
 
 
 class App extends Component {
 
-  componentDidMount() {
-    if(this.props.isAuth === false) {
+    componentDidMount() {
 
-      this.props.history.push("/login");
+        this.props.history.push("/main");
     }
-  }
 
-  render() {
+    render() {
 
-    return (
-      <div className='app'>
-        <div className='app__content'>
-          <Navbar/>
-          <div className='app__content-right-side'>
-            <Route path='/main'
-                   render={() => <Main/>}/>
+        return (
+            <div className='app'>
+                <div className='app__content'>
+                    <Navbar/>
+                    <div className='app__content-right-side'>
+                        <Route path='/main'
+                               render={() => <Main/>}/>
 
-            <Route path='/history'
-                   render={() => <History/>}/>
+                        <Route path='/history'
+                               render={() => <History/>}/>
 
-          </div>
-        </div>
-      </div>
-    )
-  }
+                    </div>
+                </div>
+            </div>
+        )
+    }
 };
 
+
+let AppContainer = compose(
+    connect(),
+    withRouter
+)(App);
+
+
 const SKYTRACK = (props) => {
-  return <BrowserRouter>
-    <Provider store={store}>
-      <App/>
-    </Provider>
-  </BrowserRouter>
+    return <BrowserRouter>
+        <Provider store={store}>
+            <AppContainer/>
+        </Provider>
+    </BrowserRouter>
 }
 
 export default SKYTRACK;

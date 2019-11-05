@@ -1,3 +1,3 @@
-Доступно по адресу: https://quiet-lake-30927.herokuapp.com
+Доступно по адресу https://skytrack-4-arkhannanov.herokuapp.com/
 
-(email = max@test.com; password = 12345)
+Для запуска в dev режиме наберите команду npm start в терминале.
