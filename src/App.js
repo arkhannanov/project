@@ -8,6 +8,8 @@ import './App.scss';
 import Main from "./components/Main/Main";
 import History from "./components/History/History";
 import {compose} from "redux";
+import Header from "./components/Header/Header";
+import News from "./components/News/News";
 
 
 class App extends Component {
@@ -18,10 +20,14 @@ class App extends Component {
     }
 
     render() {
-
         return (
             <div className='app'>
-                <div className='app__content'>
+                <div className='app__header'>
+                    <Header />
+                    <div className='app__news-login-container'>
+                        <News />
+                        {/*<Login />*/}
+                    </div>
                     <Navbar/>
                     <div className='app__content-right-side'>
                         <Route path='/main'

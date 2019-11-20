@@ -1,0 +1,49 @@
+.header {
+  max-width: 960px;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  background: white;
+  box-shadow: 0 11px 13px 5px rgba(151, 157, 164, 0.1);
+  margin-top: 107px;
+  position: relative;
+
+  &__logo {
+    background: #1d90ed;
+  }
+
+  &__item {
+    width: 120px;
+    text-align: center;
+    height: 90px;
+    display: table;
+    vertical-align: middle;
+
+    &-link {
+      margin-top: 140px;
+      color: #111111;
+      text-decoration: none;
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 14px;
+    }
+
+    &:hover {
+      background: lightgray;
+      font-weight: bold;
+    }
+  }
+
+  &__location {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    display: flex;
+    flex-direction: row;
+
+    &-city {
+      margin-left: 10px;
+    }
+  }
+}

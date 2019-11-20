@@ -2,9 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de0e3754-92bb-455d-a690-cbab8d410387" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/images/date-image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/laptop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/location-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/News/News.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/News/News.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/News/NewsItem/NewsItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/News/NewsItem/NewsItem.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/fonts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/telegram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/twitch.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/twitter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/vk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/web.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/youtube.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,11 +40,6 @@
         <option value="JavaScript File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>len</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,16 +62,21 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-way-of-samurai-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\1\Desktop\project\src\fonts" />
+      <recent name="C:\Users\1\Desktop\project\src\assets\images" />
+      <recent name="C:\Users\1\Desktop\project\src\assets\laptop" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Artur Khannanov\Desktop\test-mo\src\components\common\Preloader" />
       <recent name="C:\Users\Artur Khannanov\Desktop\test-mo\src\assets\images" />
@@ -96,6 +118,7 @@
       <workItem from="1568266687749" duration="35979000" />
       <workItem from="1572847023677" duration="18999000" />
       <workItem from="1572931579212" duration="2963000" />
+      <workItem from="1574240443312" duration="9044000" />
     </task>
     <task id="LOCAL-00001" summary="Heroku deploy">
       <created>1568320600076</created>
@@ -145,6 +168,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/damp-brook-24420" />
+      <path value="$PROJECT_DIR$/limitless-sands-35358" />
+    </ignored-roots>
     <MESSAGE value="Heroku deploy" />
     <MESSAGE value="Refactoring" />
     <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
