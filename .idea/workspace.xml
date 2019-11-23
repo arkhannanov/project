@@ -2,31 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de0e3754-92bb-455d-a690-cbab8d410387" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/images/date-image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/laptop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/location-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/News/News.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/News/News.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/News/NewsItem/NewsItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/News/NewsItem/NewsItem.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/fonts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Articles/ArticleBottom/ArticleBottom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Articles/ArticleBottom/ArticleBottom.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Articles/ArticleContent/ArticleContent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Articles/ArticleContent/ArticleContent.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Articles/ArticleTop/ArticleTop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Articles/ArticleTop/ArticleTop.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Articles/Articles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Articles/Artiles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Footer/Footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Login/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Login/Login.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Pagination/Pagination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Pagination/Pagination.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/telegram.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/twitch.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/twitter.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/vk.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/web.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/youtube.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/History/History.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/History/History.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Main.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.scss" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +57,7 @@
   <component name="ProjectId" id="1T8gAvT0vVhCKW2hVyoBouBia60" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -119,6 +118,7 @@
       <workItem from="1572847023677" duration="18999000" />
       <workItem from="1572931579212" duration="2963000" />
       <workItem from="1574240443312" duration="9044000" />
+      <workItem from="1574503422018" duration="12106000" />
     </task>
     <task id="LOCAL-00001" summary="Heroku deploy">
       <created>1568320600076</created>

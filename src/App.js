@@ -1,15 +1,16 @@
 import React, {Component} from 'react';
 import './App.scss';
-import Navbar from './components/Navbar/Navbar';
-import {BrowserRouter, Route, withRouter} from "react-router-dom";
+import {BrowserRouter, withRouter} from "react-router-dom";
 import {connect, Provider} from "react-redux";
 import store from "./redux/redux-store";
 import './App.scss';
-import Main from "./components/Main/Main";
-import History from "./components/History/History";
 import {compose} from "redux";
 import Header from "./components/Header/Header";
 import News from "./components/News/News";
+import Login from "./components/Login/Login";
+import Articles from "./components/Articles/Artiles";
+import Pagination from "./components/Pagination/Pagination";
+import Footer from "./components/Footer/Footer";
 
 
 class App extends Component {
@@ -26,17 +27,11 @@ class App extends Component {
                     <Header />
                     <div className='app__news-login-container'>
                         <News />
-                        {/*<Login />*/}
+                        <Login />
                     </div>
-                    <Navbar/>
-                    <div className='app__content-right-side'>
-                        <Route path='/main'
-                               render={() => <Main/>}/>
-
-                        <Route path='/history'
-                               render={() => <History/>}/>
-
-                    </div>
+                    <Articles />
+                    <Pagination />
+                    <Footer />
                 </div>
             </div>
         )
