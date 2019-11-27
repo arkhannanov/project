@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.scss';
-import {BrowserRouter, withRouter} from "react-router-dom";
+import {BrowserRouter, Route, withRouter} from "react-router-dom";
 import {connect, Provider} from "react-redux";
 import store from "./redux/redux-store";
 import './App.scss';
@@ -17,21 +17,28 @@ class App extends Component {
 
     componentDidMount() {
 
-        this.props.history.push("/main");
+        this.props.history.push("/home");
     }
 
     render() {
         return (
             <div className='app'>
                 <div className='app__header'>
-                    <Header />
-                    <div className='app__news-login-container'>
-                        <News />
-                        <Login />
-                    </div>
-                    <Articles />
-                    <Pagination />
-                    <Footer />
+                    <Header/>
+
+                    <Route path='/home'
+                           render={() => {
+                               return (
+                                   <div>
+                                       <div className='app__news-login-container'>
+                                           <News/>
+                                           <Login/>
+                                       </div>
+                                       < Articles/>
+                                       < Pagination/>
+                                   </div>)
+                           }}/>
+                    <Footer/>
                 </div>
             </div>
         )

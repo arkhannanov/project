@@ -20,6 +20,16 @@
     display: table;
     vertical-align: middle;
 
+    &_active {
+      background: #1d90ed;
+      font-weight: bold;
+      width: 120px;
+      text-align: center;
+      height: 90px;
+      display: table;
+      vertical-align: middle;
+    }
+
     &-link {
       margin-top: 140px;
       color: #111111;
@@ -27,10 +37,17 @@
       display: table-cell;
       vertical-align: middle;
       font-size: 14px;
+
     }
 
     &:hover {
-      background: lightgray;
+      background: lightgray!important;
+      font-weight: bold;
+    }
+
+    &:active,
+    &:focus {
+      background: #1d90ed;
       font-weight: bold;
     }
   }
