@@ -6,6 +6,10 @@
   margin: auto;
   min-height: 100%;
 
+  &__header {
+    position: relative;
+  }
+
   &__news-login-container {
     display: flex;
     flex-direction: row;

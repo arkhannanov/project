@@ -5,13 +5,13 @@ import {connect, Provider} from "react-redux";
 import store from "./redux/redux-store";
 import './App.scss';
 import {compose} from "redux";
-import Header from "./components/Header/Header";
 import News from "./components/News/News";
 import Login from "./components/Login/Login";
 import Articles from "./components/Articles/Artiles";
 import Pagination from "./components/Pagination/Pagination";
 import Footer from "./components/Footer/Footer";
-
+import Header from "./components/Header/Header";
+import HamburgerMenu from "./components/Header/HamburgerMenu/HamburgerMenu";
 
 class App extends Component {
 
@@ -21,11 +21,13 @@ class App extends Component {
     }
 
     render() {
+
         return (
             <div className='app'>
                 <div className='app__header'>
                     <Header/>
-
+                    <HamburgerMenu/>
+                </div>
                     <Route path='/home'
                            render={() => {
                                return (
@@ -40,7 +42,6 @@ class App extends Component {
                            }}/>
                     <Footer/>
                 </div>
-            </div>
         )
     }
 };

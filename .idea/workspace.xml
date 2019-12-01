@@ -2,12 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de0e3754-92bb-455d-a690-cbab8d410387" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/images/jw-active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/jw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/AutoCompletedText/AutoCompletedText.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/AutoCompletedText/Cities.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/HamburgerMenu/HamburgerMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/HamburgerMenu/HumburgerMenu.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/images-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/header-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +55,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -55,11 +66,14 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ARKPlayProduction\Desktop\project\src\components\Header\AutoCompletedText" />
+      <recent name="C:\Users\ARKPlayProduction\Desktop\project\src\assets\images" />
       <recent name="C:\Users\1\Desktop\project\src\fonts" />
       <recent name="C:\Users\1\Desktop\project\src\assets\images" />
       <recent name="C:\Users\1\Desktop\project\src\assets\laptop" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ARKPlayProduction\Desktop\project\src\assets\images" />
       <recent name="C:\Users\Artur Khannanov\Desktop\test-mo\src\components\common\Preloader" />
       <recent name="C:\Users\Artur Khannanov\Desktop\test-mo\src\assets\images" />
     </key>
@@ -105,6 +119,7 @@
       <workItem from="1574848272231" duration="4174000" />
       <workItem from="1574855555086" duration="2000" />
       <workItem from="1574855657794" duration="1200000" />
+      <workItem from="1575193987314" duration="18236000" />
     </task>
     <task id="LOCAL-00001" summary="Heroku deploy">
       <created>1568320600076</created>

@@ -11,6 +11,10 @@
 
   &__logo {
     background: #1d90ed;
+
+    &-active {
+      background: white;
+    }
   }
 
   &__item {
@@ -33,7 +37,7 @@
     &-link {
       margin-top: 140px;
       color: #111111;
-      text-decoration: none;
+      text-decoration: none!important;
       display: table-cell;
       vertical-align: middle;
       font-size: 14px;
@@ -62,5 +66,14 @@
     &-city {
       margin-left: 10px;
     }
+  }
+
+  &__modal {
+    position: fixed;
+    left: 50%;
+    top: 0;
+    width:347px;
+    height:160px;
+    display: block;
   }
 }
