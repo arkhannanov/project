@@ -76,4 +76,18 @@
     height:160px;
     display: block;
   }
+
+  &__content {
+    margin-top: 5px;
+    padding: 4px;
+    height: 30px;
+    background: white;
+    box-shadow: 0 11px 13px 5px rgba(151, 157, 164, 0.1);
+    cursor: pointer;
+
+    &:hover {
+      background: lightgray!important;
+      font-weight: bold;
+    }
+  }
 }

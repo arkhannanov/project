@@ -11,8 +11,8 @@ const HamburgerMenu = () => {
             <div className="multi-level">
                 <div className="item">
 
-                        <input type="checkbox" id="A"/>
-                        <img src={arrow} className="arrow float-left" alt="arrow"/><label htmlFor="A">Services</label>
+                    <input type="checkbox" id="A"/>
+                    <img src={arrow} className="arrow float-left" alt="arrow"/><label htmlFor="A">Services</label>
 
                     <ul>
                         <li><a href="httpp://yandex.ru">Branding</a></li>
@@ -21,16 +21,14 @@ const HamburgerMenu = () => {
                     </ul>
                 </div>
                 <div className="item">
-                        <input type="checkbox" id="B"/>
-                        <img src={arrow} className="arrow" alt="arrow"/><label htmlFor="B">Jobs</label>
+                    <input type="checkbox" id="B"/>
+                    <img src={arrow} className="arrow" alt="arrow"/><label htmlFor="B">Jobs</label>
                     <ul>
                         <li>
                             <div className="sub-item">
-                                <div className="item__image-left">
-                                    <input type="checkbox" id="B-A"/>
-                                    <img src={arrow} className="arrow" alt="arrow"/><label htmlFor="B-A">UI/UX</label>
-                                </div>
-                                <ul>
+                                <input type="checkbox" id="B-A"/>
+                                <img src={arrow} className="arrow" alt="arrow"/><label htmlFor="B-A">UI/UX</label>
+                                <ul className="sub-item-ul">
                                     <li><a href="httpp://yandex.ru">UI/UX Designer</a></li>
                                     <li><a href="httpp://yandex.ru">UI Designer</a></li>
                                     <li><a href="httpp://yandex.ru">UX Designer</a></li>
@@ -39,10 +37,10 @@ const HamburgerMenu = () => {
                         </li>
                         <li>
                             <div className="sub-item">
-                                    <input type="checkbox" id="B-B"/>
-                                    <img src={arrow} className="arrow" alt="arrow"/><label
-                                    htmlFor="B-B">Development</label>
-                                <ul>
+                                <input type="checkbox" id="B-B"/>
+                                <img src={arrow} className="arrow" alt="arrow"/><label
+                                htmlFor="B-B">Development</label>
+                                <ul className="sub-item-ul">
                                     <li><a href="httpp://yandex.ru">Front end Developer</a></li>
                                     <li><a href="httpp://yandex.ru">Back end Developer</a></li>
                                 </ul>

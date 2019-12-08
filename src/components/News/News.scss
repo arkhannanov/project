@@ -1,8 +1,41 @@
 .news {
-  display: flex;
-  flex-direction: row;
   width: 700px;
-  height: 285px;
-  justify-content: space-between;
-  background-color: transparent;
+  height: 296px;
+
+  &__link {
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.slick-slide {
+  width: 234px!important;
+  height: 296px;
+  box-sizing: border-box;
+}
+
+.slick-list {
+  padding: 0;
+}
+
+.slick-next {
+  background: url('./images/next.png') center center no-repeat !important;
+  background-color: blue;
+  right: -15px;
+
+  &::before {
+    display: none;
+  }
+}
+
+.slick-prev {
+  background: url('./images/back.png') center center no-repeat !important;
+
+  &::before {
+    display: none;
+  }
 }

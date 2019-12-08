@@ -85,12 +85,15 @@ label {
 .nav li a {
   line-height: 50px;
   margin: 0;
-  padding: 0 4em;
+  padding: 0 2.6em;
   list-style: none;
   text-decoration: none;
   color: black;
   font-weight: 100;
 }
 
-
+.sub-item-ul li a {
+  margin-left: 60px;
+  padding: 0;
+}
 

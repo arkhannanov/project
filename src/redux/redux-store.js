@@ -1,9 +1,13 @@
 import {applyMiddleware, combineReducers, compose, createStore} from "redux";
 import headerReducer from "./header-reducer";
 import createSagaMiddleware from "redux-saga";
+import { reducer as formReducer } from 'redux-form';
+import loginReducer from "./login-reducer";
 
 let reducers = combineReducers({
-  header: headerReducer
+  header: headerReducer,
+  login: loginReducer,
+  form: formReducer
 });
 
 const sagaMiddleware = createSagaMiddleware();

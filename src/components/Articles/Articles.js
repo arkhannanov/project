@@ -4,7 +4,6 @@ import articles from './../../assets/images/articles.png';
 import ArticleTop from "./ArticleTop/ArticleTop";
 import ArticleBottom from "./ArticleBottom/ArticleBottom";
 
-
 const Articles = () => {
     return (
         <div className='articles'>
