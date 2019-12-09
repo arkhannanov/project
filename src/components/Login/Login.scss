@@ -175,4 +175,45 @@
       }
     }
   }
+
+  &__registration {
+    margin-top: 7px;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: underline;
+    border: none;
+    background: transparent;
+
+    &-modal-content {
+      background: #198ce8 !important;
+    }
+
+    &-header {
+      text-align: center;
+      margin-top: 20px;
+      background: #198ce8;
+      color: #ffffff;
+      font-size: 16px;
+    }
+
+    &-body {
+      background: #198ce8;
+
+      div {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &-footer {
+      background: #198ce8;
+      border-top: none !important;
+    }
+
+  }
+
+}
+
+.close {
+  display: none;
 }

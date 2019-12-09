@@ -90,7 +90,7 @@ export class Header extends Component {
         const {logoActive, homeActive, aboutActive, skillsActive, educationActive} = this.state;
         const {city, modal} = this.props;
 
-        const closeBtn = <button className="close" onClick={this.toggle}>&times;</button>;
+        const closeBtn = <button className="header__modal-close" onClick={this.toggle}>x</button>;
 
         return (
             <div>

@@ -2,25 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de0e3754-92bb-455d-a690-cbab8d410387" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/redux/login-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Login/Captcha.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Login/RegistationForm.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Login/RegistrationForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Articles/Artiles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Articles/Articles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/HamburgerMenu/HamburgerMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HamburgerMenu/HamburgerMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/HamburgerMenu/HumburgerMenu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HamburgerMenu/HumburgerMenu.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Login/Login.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/News/News.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/News/News.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/News/News.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/News/News.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/News/NewsItem/NewsItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/News/NewsItem/NewsItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/images-selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/images-selectors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +48,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -124,6 +115,7 @@
       <workItem from="1575193987314" duration="18236000" />
       <workItem from="1575403417989" duration="1041000" />
       <workItem from="1575793872997" duration="18172000" />
+      <workItem from="1575893998925" duration="10551000" />
     </task>
     <task id="LOCAL-00001" summary="Heroku deploy">
       <created>1568320600076</created>

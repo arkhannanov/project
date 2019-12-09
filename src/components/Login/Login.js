@@ -2,6 +2,11 @@ import React, {Component} from 'react';
 import {Field, reduxForm} from 'redux-form';
 import './Login.scss';
 import {connect} from "react-redux";
+import ModalHeader from "reactstrap/lib/ModalHeader";
+import ModalBody from "reactstrap/lib/ModalBody";
+import Modal from "reactstrap/lib/Modal";
+import {Button, ModalFooter} from "reactstrap";
+import RegistrationForm from "./RegistrationForm";
 
 const validate = values => {
     const errors = {}
@@ -22,8 +27,14 @@ export class loginForm extends Component {
 
         this.state = {
             authActive: false,
-            values: false
+            values: false,
+            modal: false
         }
+    }
+
+    toggle = (e) => {
+        e.preventDefault();
+        this.setState({modal: !this.state.modal});
     }
 
     renderLogin = ({input, label, type, meta: {touched, error, warning}}) => (<div>
@@ -62,10 +73,8 @@ export class loginForm extends Component {
 
     render() {
 
-        const {authActive, values} = this.state;
+        const {authActive, values, modal } = this.state;
         const {handleSubmit, error, pristine, submitting} = this.props;
-
-        console.log(this.props);
 
         return (
             <form className={!authActive ? "login" : "login_active"} onSubmit={handleSubmit}>
@@ -90,6 +99,16 @@ export class loginForm extends Component {
                 <button className={!authActive ? "login__button" : "login__button_active"} type='submit'
                         disabled={pristine || submitting}>Войти
                 </button>
+                <button className="login__registration" onClick={this.toggle}>Регистрация</button>
+                <Modal isOpen={modal} toggle={this.toggle} className="login__registration-modal" contentClassName="login__registration-modal-content" >
+                    <div toggle={this.toggle} className="login__registration-header">Регистрация</div>
+                    <ModalBody className="login__registration-body">
+                        <RegistrationForm/>
+                    </ModalBody>
+                    <ModalFooter className="login__registration-footer">
+                        <Button color="danger" onClick={this.toggle}>Отмена</Button>
+                    </ModalFooter>
+                </Modal>
                 <div className="login__remember">
                     <Field name="remember" className="login__remember-checkbox" type="checkbox" onFocus={this.focus} component="input"/>
                     <div
