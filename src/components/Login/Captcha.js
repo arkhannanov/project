@@ -11,7 +11,6 @@ class Captcha extends Component {
             <div>
                 <ReCAPTCHA
                     ref="captcha"
-                    size="invisible"
                     sitekey="6Ldx1sYUAAAAAGvcNnXhiOPOc"
                     onChange={this.props.input.onChange}
                 />

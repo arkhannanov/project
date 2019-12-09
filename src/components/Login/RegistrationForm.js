@@ -3,8 +3,12 @@ import {Field, reduxForm} from 'redux-form';
 import {connect} from "react-redux";
 import './RegistationForm.scss';
 import Captcha from "./Captcha";
+import {ReCAPTCHA} from "react-google-recaptcha";
+import Recaptcha from 'react-recaptcha';
 
 const validate = values => {
+
+    console.log(values.recaptcha)
     const errors = {}
     if (!values.login) {
         errors.login = "Укажите логин";
@@ -21,13 +25,25 @@ const validate = values => {
         errors.confirmPassword = "Подтвердите пароль";
     }
     if (!values.recaptcha) {
-        errors.recaptcha = 'reCAPTCHA required.';
+        errors.recaptcha = 'Введите капчу';
     }
     return errors
 }
 
 
 export class registationForm extends Component {
+
+    Captcha = ({input, label, type, meta: {touched, error, warning}}) => (
+        <div>
+            {console.log(input)}
+            {touched && ((error && <span className="registration__captcha-text-danger">{error}</span>) || (warning &&
+                <span>{warning}</span>))}
+            <Recaptcha
+                sitekey="6LcJ4cYUAAAAAGjYfFM4KKaAStQtq5u2OpbJVZk9"
+                verifyCallback ={() => input.onChange(1)}
+            />
+        </div>
+    );
 
     renderRegistration = ({input, label, type, meta: {touched, error, warning}}) => (<div>
             <input {...input} placeholder={label}
@@ -67,7 +83,9 @@ export class registationForm extends Component {
                 label='подтверждение пароля'
                 type="password"
             />
-                <Field name='recaptcha' component={Captcha}/>
+            <div className="registration__captcha">
+                <Field name='recaptcha' component={this.Captcha}/>
+            </div>
                 <button className="registration__button" type='submit'
                         disabled={pristine || submitting}>Регистрация
                 </button>
