@@ -4,16 +4,19 @@
   flex-direction: column;
 
   &__captcha {
-    margin-top: 30px;
+    margin-top: 25px;
+  }
 
-    &-text-dander {
-      color: red;
-    }
+  &__captcha-text-danger {
+    color: red;
+    font-size: 13px;
   }
 
   div {
     position: relative;
     align-self: center;
+    display: flex;
+    flex-direction: column;
   }
 
   &__text-danger {

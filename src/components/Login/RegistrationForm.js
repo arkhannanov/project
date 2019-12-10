@@ -5,6 +5,7 @@ import './RegistationForm.scss';
 import Captcha from "./Captcha";
 import {ReCAPTCHA} from "react-google-recaptcha";
 import Recaptcha from 'react-recaptcha';
+import {ReactPasswordStrength} from "react-password-strength";
 
 const validate= values => {
 
@@ -27,6 +28,10 @@ const validate= values => {
     if (!values.recaptcha) {
         errors.recaptcha = 'Введите капчу';
     }
+    if (values.password !== values.confirmPassword) {
+        errors.password = "Пароли не совпадают";
+        errors.confirmPassword = "Пароли не совпадают";
+    }
     return errors
 }
 
@@ -35,12 +40,12 @@ export class registationForm extends Component {
 
     Captcha = ({input, label, type, meta: {touched, error, warning}}) => (
         <div>
-            {touched && ((error && <span className="registration__captcha-text-danger">{error}</span>) || (warning &&
-                <span>{warning}</span>))}
             <Recaptcha
                 sitekey="6LcJ4cYUAAAAAGjYfFM4KKaAStQtq5u2OpbJVZk9"
                 verifyCallback ={() => input.onChange(1)}
             />
+            {touched && ((error && <span className="registration__captcha-text-danger">{error}</span>) || (warning &&
+                <span>{warning}</span>))}
         </div>
     );
 
@@ -49,6 +54,15 @@ export class registationForm extends Component {
                    type={type} className="registration__input"/>
             {touched && ((error && <span className="registration__text-danger">{error}</span>) || (warning &&
                 <span>{warning}</span>))}
+            <ReactPasswordStrength
+                className="customClass"
+                style={{ display: 'none' }}
+                minLength={5}
+                minScore={2}
+                scoreWords={['weak', 'okay', 'good', 'strong', 'stronger']}
+                // changeCallback={foo}
+                inputProps={{ name: "password_input", autoComplete: "off", className: "form-control" }}
+            />
         </div>
     )
 
