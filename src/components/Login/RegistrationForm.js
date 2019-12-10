@@ -6,7 +6,7 @@ import Captcha from "./Captcha";
 import {ReCAPTCHA} from "react-google-recaptcha";
 import Recaptcha from 'react-recaptcha';
 
-const validate = values => {
+const validate= values => {
 
     console.log(values.recaptcha)
     const errors = {}
@@ -35,7 +35,6 @@ export class registationForm extends Component {
 
     Captcha = ({input, label, type, meta: {touched, error, warning}}) => (
         <div>
-            {console.log(input)}
             {touched && ((error && <span className="registration__captcha-text-danger">{error}</span>) || (warning &&
                 <span>{warning}</span>))}
             <Recaptcha
