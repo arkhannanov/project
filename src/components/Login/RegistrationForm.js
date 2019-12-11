@@ -6,6 +6,7 @@ import Captcha from "./Captcha";
 import {ReCAPTCHA} from "react-google-recaptcha";
 import Recaptcha from 'react-recaptcha';
 import {ReactPasswordStrength} from "react-password-strength";
+import PasswordStrengthMeter from "./PasswordStrengthMeter";
 
 const validate = values => {
     const errors = {}
@@ -37,33 +38,18 @@ const validate = values => {
 }
 
 
-export class registationForm extends Component {
+export class registrationForm extends Component {
 
     constructor(props) {
         super(props);
 
         this.state = {
-            password_strength: null
+            password: '',
         }
     }
 
-    checkPassword = (e) => {
-        const password = e.target.value;
-        const password_strength = 0;
-        var strength = this.state.password_strength;
-        if (password.match(/[a-zA-Z0-9][a-zA-Z0-9]+/)) {
-            strength += 1
-        }
-        if (password.match(/[~<>]+/)) {
-            strength += 1
-        }
-        if (password.match(/[!@£$%^&()]+/)) {
-            strength += 1
-        }
-        if (password.length > 5) {
-            strength += 1
-        }
-        this.setState({password_strength: strength});
+    handleChange = (e) => {
+        this.setState({password: e.target.value})
     }
 
     Captcha = ({input, label, type, meta: {touched, error, warning}}) => (
@@ -79,24 +65,25 @@ export class registationForm extends Component {
 
     renderRegistration = ({input, label, type, meta: {touched, error, warning}}) => (<div>
             <input {...input} placeholder={label}
-                   type={type} className="registration__input" onKeyUp={this.checkPassword} />
+                   type={type} className="registration__input"/>
             {touched && ((error && <span className="registration__text-danger">{error}</span>) || (warning &&
                 <span>{warning}</span>))}
-            <progress max="100" value={(this.state.password_strength * 20)} id="strength"></progress>
-            {/*<ReactPasswordStrength*/}
-            {/*    className="customClass"*/}
-            {/*    style={{ display: 'none' }}*/}
-            {/*    minLength={5}*/}
-            {/*    minScore={2}*/}
-            {/*    scoreWords={['weak', 'okay', 'good', 'strong', 'stronger']}*/}
-            {/*    // changeCallback={foo}*/}
-            {/*    inputProps={{ name: "password_input", autoComplete: "off", className: "form-control" }}*/}
-            {/*/>*/}
+        </div>
+    )
+
+    renderPassword = ({input, label, type, meta: {touched, error, warning}}) => (<div>
+
+            <input {...input} placeholder={label}
+                   type={type} className="registration__input"
+            />
+            {touched && ((error && <span className="registration__text-danger">{error}</span>) || (warning &&
+                <span>{warning}</span>))}
         </div>
     )
 
     render() {
 
+        const {password} = this.state;
         const {handleSubmit, error, pristine, submitting} = this.props;
 
         return (
@@ -115,10 +102,12 @@ export class registationForm extends Component {
                 />
                 <Field
                     name="password"
-                    component={this.renderRegistration}
+                    component={this.renderPassword}
                     label='пароль'
                     type="password"
+                    onChange={this.handleChange}
                 />
+                <PasswordStrengthMeter password={password}/>
                 <Field
                     name="confirmPassword"
                     component={this.renderRegistration}
@@ -136,7 +125,7 @@ export class registationForm extends Component {
     }
 }
 
-const ReduxForm = reduxForm({form: 'registration', validate})(registationForm);
+const ReduxForm = reduxForm({form: 'registration', validate})(registrationForm);
 
 const Registration = (props) => {
     const onSubmitRegistration = (formData) => {

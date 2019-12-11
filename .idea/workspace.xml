@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de0e3754-92bb-455d-a690-cbab8d410387" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Login/PasswordStrengthMeter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Login/PasswordStrengthMeter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Login/RegistrationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/RegistrationForm.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -110,6 +115,7 @@
       <workItem from="1575793872997" duration="18172000" />
       <workItem from="1575893998925" duration="10551000" />
       <workItem from="1575963765175" duration="12040000" />
+      <workItem from="1576053016447" duration="6530000" />
     </task>
     <task id="LOCAL-00001" summary="Heroku deploy">
       <created>1568320600076</created>

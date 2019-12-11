@@ -65,7 +65,6 @@ export class loginForm extends Component {
     }
 
     change = (e) => {
-        console.log(e.target.value);
         if (e.target.value !== '') {
             this.setState({values: true});
         } else {
