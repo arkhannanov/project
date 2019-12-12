@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de0e3754-92bb-455d-a690-cbab8d410387" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/PasswordStrengthMeter.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/PasswordStrengthMeter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/RegistrationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/RegistrationForm.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +112,7 @@
       <workItem from="1575963765175" duration="12040000" />
       <workItem from="1576053016447" duration="7406000" />
       <workItem from="1576074755417" duration="153000" />
-      <workItem from="1576143070683" duration="3068000" />
+      <workItem from="1576143070683" duration="3416000" />
     </task>
     <task id="LOCAL-00001" summary="Heroku deploy">
       <created>1568320600076</created>
