@@ -18,6 +18,7 @@ class App extends Component {
     componentDidMount() {
 
         this.props.history.push("/home");
+        var ws = new WebSocket("wss://" + "https://project-arkhannanov.herokuapp.com/");
     }
 
     render() {

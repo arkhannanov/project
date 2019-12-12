@@ -52,10 +52,6 @@ export class registrationForm extends Component {
 
     Captcha = ({input, label, type, meta: {touched, error, warning}}) => (
         <div>
-            {/*<Recaptcha*/}
-            {/*    sitekey="6LcJ4cYUAAAAAGjYfFM4KKaAStQtq5u2OpbJVZk9"*/}
-            {/*    verifyCallback={() => input.onChange(1)}*/}
-            {/*/>*/}
             {touched && ((error && <span className="registration__captcha-text-danger">{error}</span>) || (warning &&
                 <span>{warning}</span>))}
         </div>

@@ -30,7 +30,7 @@ class PasswordStrengthMeter extends Component {
                 {password && (
                     <div className={`color-${testedResult.score}`}>{this.createPasswordLabel(testedResult)}</div>)}
             </div>
-        );
+    );
     }
 }
 
