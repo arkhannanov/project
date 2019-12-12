@@ -116,7 +116,7 @@ export class loginForm extends Component {
                        contentClassName="login__registration-modal-content">
                     <button onClick={this.toggle} className="login__registration-header">Регистрация</button>
                     <ModalBody className="login__registration-body">
-                        <RegistrationForm/>
+                        {/*<RegistrationForm/>*/}
                     </ModalBody>
                     <ModalFooter className="login__registration-footer">
                         <Button color="danger" onClick={this.toggle}>Отмена</Button>
