@@ -20,8 +20,6 @@ const validate = values => {
     }
     if (!values.password) {
         errors.password = "Укажите пароль";
-    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.password)) {
-        errors.email = 'Неправильный e-mail'
     }
 
     if (!values.confirmPassword) {
